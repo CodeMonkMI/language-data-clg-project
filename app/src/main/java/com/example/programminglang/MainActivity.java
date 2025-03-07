@@ -25,11 +25,19 @@ public class MainActivity extends AppCompatActivity {
         });
         this.setTitle("Programing Languages");
 
-        Button button = findViewById(R.id.button1);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button button1 = findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, C_Lang.class);
+                startActivity(intent);
+            }
+        });
+        Button button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, C_Plus_Plus.class);
                 startActivity(intent);
             }
         });

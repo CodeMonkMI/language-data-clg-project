@@ -13,18 +13,20 @@
         android:theme="@style/Theme.ProgrammingLang"
         tools:targetApi="31">
         <activity
+            android:name=".C_Plus_Plus"
+            android:exported="false" android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".C_Lang"
-            android:exported="true" android:parentActivityName=".MainActivity"  >
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
         </activity>
     </application>
 

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".C_Plus_Plus">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="230sp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="CLang"
+        android:src="@drawable/c_plus_plus"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="10sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="What is C++?"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C++ is a cross-platform language that can be used to create high-performance applications\n\n C++ was developed by Bjarne Stroustrup, as an extension to the C language.\n\nC++ gives programmers a high level of control over system resources and memory.\n\nThe language was updated 5 major times in 2011, 2014, 2017, 2020, and 2023 to C++11, C++14, C++17, C++20, and C++23." />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10sp"
+            android:text="Why Use C++"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="C++ is one of the world's most popular programming languages.\n\nC++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.\n\nC++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.\n\nC++ is portable and can be used to develop applications that can be adapted to multiple platforms." />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
