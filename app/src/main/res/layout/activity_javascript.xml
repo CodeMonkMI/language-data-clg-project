@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Javascript">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="10sp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="230sp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="JavaScript"
+                android:src="@drawable/javascript"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="-16dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="What is JavaScript?"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JavaScript is the programming language of the web.\n\nIt can update and change both HTML and CSS.\n\nIt can calculate, manipulate and validate data." />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10sp"
+                android:text="Why Study JavaScript?"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="JavaScript is one of the 3 languages all web developers must learn:\n\n1. HTML to define the content of web pages\n\n2. CSS to specify the layout of web pages\n\n3. JavaScript to program the behavior of web pages" />
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10sp"
+                android:text="JavaScript Can Change HTML Content"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="One of many JavaScript HTML methods is getElementById().\n\nThe example below 'finds' an HTML element (with id='demo'), and changes the element content (innerHTML) to 'Hello JavaScript':" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
