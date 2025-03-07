@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".C_Sharp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="10sp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="230sp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="CSharp"
+                android:src="@drawable/c_sharp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="-16dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="What is C#?"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C# is pronounced 'C-Sharp'\n\n.It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.\n\nC# has roots from the C family, and the language is close to other popular languages like C++ and Java.\n\nThe first version was released in year 2002. The latest version, C# 13, was released in November 2024.\n\nC# is used for:\n" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="Mobile applications\n\nDesktop applications\n\n Web applications\n\nWeb services\n\nWeb sites\n\nGames\n\nVR\n\nDatabase applications\n\nAnd much, much more!" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10sp"
+                android:text="Why Use C#"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="It is one of the most popular programming languages in the world\n\nIt is easy to learn and simple to use\n\nIt has huge community support\n\nC# is an object-oriented language which gives a clear structure to programs and \n\nallows code to be reused, lowering development costs\n\nAs C# is close to C, C++ and Java, it makes it easy for programmers to switch to C# or vice versa" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

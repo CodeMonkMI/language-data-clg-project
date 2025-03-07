@@ -13,8 +13,12 @@
         android:theme="@style/Theme.ProgrammingLang"
         tools:targetApi="31">
         <activity
-            android:name=".C_Plus_Plus"
+            android:name=".C_Sharp"
             android:exported="false" android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".C_Plus_Plus"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".C_Lang"
             android:exported="true"
