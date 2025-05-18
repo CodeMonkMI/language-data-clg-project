@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -16,6 +17,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         this.setTitle("Programing Languages");
+
+
 
         Button button1 = findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
@@ -75,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     }
 
     @Override
@@ -88,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if(R.id.menu_about == id) {
-            Intent intent = new Intent(MainActivity.this, Javascript.class);
+            Intent intent = new Intent(MainActivity.this, AboutUs.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
