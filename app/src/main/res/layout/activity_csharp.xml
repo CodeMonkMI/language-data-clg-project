@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".C_Sharp">
 
     <ScrollView
@@ -68,8 +69,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
                 android:text="It is one of the most popular programming languages in the world\n\nIt is easy to learn and simple to use\n\nIt has huge community support\n\nC# is an object-oriented language which gives a clear structure to programs and \n\nallows code to be reused, lowering development costs\n\nAs C# is close to C, C++ and Java, it makes it easy for programmers to switch to C# or vice versa" />
-
-
 
         </LinearLayout>
     </ScrollView>
