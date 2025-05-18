@@ -2,10 +2,14 @@ package com.example.programminglang;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -69,5 +73,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.topmenu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if(R.id.menu_about == id) {
+            Intent intent = new Intent(MainActivity.this, Javascript.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

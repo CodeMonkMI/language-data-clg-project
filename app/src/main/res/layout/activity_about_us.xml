@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".AboutUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="212dp"
+                    android:layout_height="305dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Developer"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/monirul_islam2"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:padding="16dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monirul Islam"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Software Engineer"
+                    android:textAlignment="center"
+                    android:textSize="17dp" />
+
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alignmentMode="alignBounds"
+                    android:columnCount="3"
+                    android:rowCount="1"
+                    android:useDefaultMargins="true">
+
+                    <Button
+                        android:id="@+id/contact_website"
+                        android:text="Website" />
+
+                    <Button
+                        android:id="@+id/contact_facebook"
+                        android:text="Facebook" />
+
+                    <Button
+                        android:id="@+id/contact_linkedin"
+                        android:text="LinkedIn" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
