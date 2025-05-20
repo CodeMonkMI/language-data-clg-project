@@ -8,79 +8,57 @@
     tools:context=".MainActivity">
 
 
-
-    <LinearLayout
-        android:id="@+id/innerLayout"
-        android:gravity="center"
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        tools:ignore="MissingConstraints">
+
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10sp"
-            android:layout_marginTop="16dp"
-            android:text="C"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/innerLayout"
-
-            />
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:text="C" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10sp"
-            android:layout_marginTop="16dp"
-            android:text="C++"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.842"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button1" />
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:text="C++" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10sp"
-            android:layout_marginTop="16dp"
-            android:text="C#"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.842"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:text="C#" />
 
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10sp"
-            android:layout_marginTop="16dp"
-            android:text="Java"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.473"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:text="Java" />
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10sp"
-            android:layout_marginTop="16dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
             android:text="JavaScript"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4"
 
             />
-    </LinearLayout>
+
+    </GridLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
